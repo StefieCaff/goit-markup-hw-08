@@ -1,0 +1,104 @@
+@media screen and (max-width: 480px) {
+  .logo{
+       position: relative;
+  } 
+
+  .mobil {
+     position: absolute;
+     right: 15px;
+     top: 20px;
+  }
+
+  .mobil__hamburger {
+     fill: none;
+     cursor: pointer;
+     transition-property: fill;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+       fill: $brightAccentColor;
+     }
+  }
+
+  .mobil__wrapper {
+    position: relative; 
+    padding-left: 30px;
+    padding-top: 48px;
+  }
+
+  .mobil__button-close{
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $brightAccentColor;
+  }
+  }
+
+  .mobil__item{
+    padding-bottom: 32px;
+  }
+
+ .mobil__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: $primaryColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $brightAccentColor;
+  }
+  }
+
+  .mobil__contacts{
+    padding-top: 300px;
+  }
+
+  .mobil-phone__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $brightAccentColor;
+  }
+
+  .mobil__socials-wrapper {
+    padding-bottom: 48px;
+    padding-top: 32px;
+  }
+
+  .mobil-email__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: $darkColor; 
+  }
+
+  .mobil__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $brightAccentColor;
+    padding: 0px 10px;
+  }
+
+  .mobil__social-border:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+}

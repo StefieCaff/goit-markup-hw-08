@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./scss/main.min.css" />
+    
+        <link rel="stylesheet" href="./scss/main.css" />
 
     <title>Effective Solutions for your Business</title>
 </head>
@@ -23,6 +24,11 @@
         <nav class="nav">
           <a class="link logo" href="index.html">WebStudio
           </a>
+              <div class="mobil">
+                <svg class="mobil__hamburger" width="24" height="16">
+                  <use href="./images/icons.svg#hamburger"></use>
+                </svg>
+              </div>
           <ul class="list navbar">
             <li class="navbar__item">
               <a class="link navbar__link current-link" href="./index.html">Studio
@@ -65,6 +71,39 @@
           </div>
         </section>
 
+          <div class=" mobil__wrapper js-menu-container" id="mobile-menu">
+            <button class="mobil__button-close menu-toggle js-close-menu">
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#mobil-close"></use>
+              </svg>
+            </button>
+            <ul class="list mobil__navbar">
+              <li class="mobil__item">
+                <a class="link mobil__link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobil__item">
+                <a class="link mobil__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobil__item">
+                <a class="link mobil__link" href="#">Contacts</a>
+              </li>
+            </ul>
+            <ul class="list mobil__contacts">
+              <li class="mobil__item">
+                <a class="link mobil-phone__link" href="tel:+38 096 111 11 11"> +38 096 111 11 11</a>
+              </li>
+              <li class="mobil__item">
+                <a class="link mobil-email__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          <div class="mobil__socials-wrapper">
+            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">Instagram</a></span>
+            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">Twitter</a></span>
+            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">Facebook</a></span>           
+            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">LinkedIn</a></span>
+          </div>
+        </div>
+<!--
         <section class="section">
             <div class="container">
                 <ul class="list advantage">
@@ -117,21 +156,30 @@
                 <h2 class="section-heading">What We Do</h2>
                 <ul class="list do">
                   <li class="do__item">
-                    <img class="img" src="./images/wwdo1.jpg"
-                      alt="hands at keyboard with design tree and tablet" 
-                      width="370" />
+                    <img class="img" 
+                      alt="hands at keyboard with design wire-frame"
+                      src="./images/desktop/d-do-desktop370.jpg"
+                      srcset="./images/desktop/d-do-desktop370.jpg 1x, 
+                        ./images/desktop/d-do-desktop740.jpg 2x"
+                      sizes="370px" />
                       <p class="do__label">Desktop Apps</p>
                   </li>
                   <li class="do__item">
-                    <img class="img" src="./images/wwdo2.jpg"
+                    <img class="img" 
                       alt="laptop with various design layouts on screen and hands holding smartphone"
-                      width="370" />
+                      src="./images/desktop/d-do-laptop370.jpg" 
+                      srcset="./images/desktop/d-do-laptop370.jpg 1x, 
+                        ./images/desktop/d-do-laptop740.jpg 2x"
+                      sizes="370px" />
                       <p class="do__label">Mobil Apps</p>
                   </li>
                   <li class="do__item">
-                    <img class="img" src="./images/wwdo3.jpg" 
+                    <img class="img" 
                       alt="desk with hands holding tablet with color wheel displayed"
-                      width="370" />
+                      src="./images/desktop/d-do-desktop370.jpg" 
+                      srcset="./images/desktop/d-do-tablet370.jpg 1x, 
+                        ./images/desktop/d-do-tablet740.jpg 2x"
+                      sizes="370px" />
                       <p class="do__label">Design Solutions</p>
                 </ul>
             </div>
@@ -143,9 +191,16 @@
                 <ul class="list team">
                   <li class="team__item"> 
                       <img class="img team__img" 
-                        src=./images/product.jpg 
-                        alt=" head shot of smiling employee looking stylish"
-                        width="270" /> 
+                        alt=" head shot of Christopher smiling looking stylish" 
+                        src="./images/mobil/m-product450.jpg"
+                        srcset=" ./images/desktop/d-product270.jpg 270w, 
+                        ./images/desktop/d-product540.jpg 540w, 
+                        ./images/mobil/m-product450.jpg 450w,
+                        ./images/mobil/m-product900.jpg 900w,
+                        ./images/tablet/t-product354.jpg 354w,
+                        ./images/tablet/t-product708.jpg 708w"
+                        sizes="(min-width: 1200px 270px),
+                        (min-width: 768px 354px), (max-width: 480px 450px), 100vw" /> 
                       <h3 class="team__name">
                         Christopher Walker
                       </h3>
@@ -185,9 +240,16 @@
                   </li>
                   <li class="team__item">
                       <img class="img team__img" 
-                        src="./images/frontend.jpg" 
-                        alt=" head shot of smiling employee looking stylish"
-                        width="270" />
+                        alt=" head shot of Kylie smiling looking stylish" 
+                        src="./images/mobil/m-frontend450.jpg"
+                        srcset="./images/desktop/d-frontend270.jpg 270w, 
+                          ./images/desktop/d-frontend540.jpg 540w, 
+                          ./images/mobil/m-frontend450.jpg 450w, 
+                          ./images/mobil/m-frontend900.jpg 900w, 
+                          ./images/tablet/t-frontend354.jpg 354w,
+                          ./images/tablet/t-frontend708.jpg 708w"
+                       sizes="(min-width: 1200px 270px),
+                        (min-width: 768px 354px), (max-width: 480px 450px), 100vw" />
                       <h3 class="team__name">
                         Kylie Evans
                       </h3>
@@ -226,10 +288,19 @@
                       </ul>
                   </li>
                   <li class="team__item">
-                      <img class="img team__img" 
-                        src="./images/marketing.jpg" 
-                        alt=" head shot of smiling employee looking stylish"
-                        width="270" />
+                      <img class="img team__img"
+                        alt="head shot of Rayan smiling looking stylish"
+                        src="./images/mobil/m-marketing450.jpg" 
+                        srcset="./images/desktop/d-marketing270 270w,
+                           ./images/desktop/d-marketing540.jpg 540w,
+                           ./images/tablet/t-marketing354.jpg 354w, 
+                           ./images/tablet/t-marketing708.jpg 708w,
+                           ./images/mobil/m-marketing450.jpg 450w, 
+                           ./images/mobil/m-marketing900.jpg 900w"
+                         sizes="(max-width: 480px 450px), 
+                           (min-width: 768px 354px), 
+                           (min-width: 1200px 270px),
+                           100vw" />
                       <h3 class="team__name">
                         Rayan Harris
                       </h3>
@@ -269,9 +340,18 @@
                   </li>
                   <li class="team__item">
                       <img class="img team__img" 
-                        src="./images/uidesign.jpg" 
-                        alt=" head shot of smiling employee looking stylish"
-                        width="270" />
+                        alt=" head shot of Tyler smiling looking stylish"
+                        src="./images/mobil/m-designer450.jpg" 
+                        srcset="./images/desktop/d-designer270.jpg 270w, 
+                          ./images/desktop/d-designer540.jpg 540w, 
+                          ./images/tablet/t-designer354.jpg 354w,
+                          ./images/tablet/t-designer708.jpg 708w,
+                          ./images/mobil/m-designer450.jpg 450w,
+                          ./images/mobil/m-designer900.jpg 900w"
+                        sizes="(max-width: 480px 450px), 
+                           (min-width: 768px 354px), 
+                           (min-width: 1200px 270px),
+                           100vw" />
                       <h3 class="team__name">
                         Tyler Moore
                       </h3>
@@ -490,8 +570,9 @@
     </form>
   </div>
   </div>
-
+-->
   <script src="./js/modal.js"></script>
+  <script src="./js/mobil-menu.js"></script>
 </body>
 
 </html>
