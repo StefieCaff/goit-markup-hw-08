@@ -31,19 +31,23 @@
   @extend %button;
   width: 200px;
   padding: 10px 80px;
-  margin-left: 124px;
+  margin-left: 75px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 125px;
+  }
 }
 
 .subscription-button {
   @extend %button;
-  padding: 10px 0px;
-  width: 200px;    
-  margin-left: 12px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+    padding: 10px 0px;
+    width: 200px;    
+    margin-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
+     margin-bottom: 0px;
   }
 }
 

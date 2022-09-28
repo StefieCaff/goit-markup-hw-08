@@ -63,13 +63,13 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 @media screen and (min-width: 1200px) {
-  .section {
+  .section .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .section-heading {
   display: flex;
   justify-content: center;
@@ -264,7 +264,12 @@ address {
 .form__button {
   width: 200px;
   padding: 10px 80px;
-  margin-left: 124px;
+  margin-left: 75px;
+}
+@media screen and (min-width: 1200px) {
+  .form__button {
+    margin-left: 125px;
+  }
 }
 
 .subscription-button {
@@ -276,7 +281,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .subscription-button {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 
@@ -337,6 +342,7 @@ address {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  width: 450px;
   padding: 40px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -344,6 +350,11 @@ address {
   transition-property: background-color, box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 0px;
+  }
 }
 
 .is-hidden {
@@ -403,7 +414,7 @@ address {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--sub-color);
+  color: #757575;
 }
 .modal-wrapper__label:hover, .modal-wrapper__label:focus-within {
   fill: #2196F3;
@@ -523,10 +534,16 @@ address {
 
 .agree-check__link, .agree-check__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .agree-check__link, .agree-check__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .agree-check__text {
