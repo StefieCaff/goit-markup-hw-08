@@ -573,7 +573,7 @@ address {
   margin-top: 15px;
 }
 
-.subscription-header {
+.subscription__header {
   display: flex;
   margin-left: 93px;
 }

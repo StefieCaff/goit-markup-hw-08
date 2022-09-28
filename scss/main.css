@@ -96,7 +96,12 @@ address {
 
 .logo--footer {
   display: block;
-  margin-bottom: 10px;
+  margin: 60px 0 13px;
+}
+@media screen and (min-width: 1200px) {
+  .logo--footer {
+    margin: 0 0 10px;
+  }
 }
 
 .logo {
@@ -267,6 +272,12 @@ address {
   width: 200px;
   margin-left: 12px;
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-button {
+    margin-bottom: 0;
+  }
 }
 
 .filter__button {
@@ -611,11 +622,27 @@ address {
 
 .footer {
   background-color: #2F303A;
-  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+  }
 }
 
-.footer-container {
+.footer-logo-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.address__item {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address__item {
+    text-align: left;
+  }
 }
 
 .footer-address-link {
@@ -632,10 +659,6 @@ address {
   color: #FFFFFF;
 }
 
-.footer-wrapper {
-  margin-left: 70px;
-}
-
 .footer-header {
   font-weight: 700;
   font-size: 14px;
@@ -643,16 +666,68 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 15px;
+  margin-top: 48px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-header {
+    margin-top: 15px;
+    text-align: none;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    justify-content: space-around;
+  }
+  .footer-container .footer-wrapper {
+    margin-left: 70px;
+  }
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    flex-direction: row;
+  }
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__header {
+    margin-top: 15px;
+  }
 }
 
 .subscription__input {
   box-sizing: border-box;
   padding-left: 16px;
   height: 50px;
-  width: 358px;
+  width: 450px;
   margin-top: 20px;
-  margin-left: 93px;
   font-size: 16px;
   background-color: #2F303A;
   color: #FFFFFF;
@@ -665,6 +740,13 @@ address {
 }
 .subscription__input:hover, .subscription__input:focus {
   border-color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    display: flex;
+    margin-left: 93px;
+    width: 358px;
+  }
 }
 
 #footer-placeholder::-moz-placeholder {

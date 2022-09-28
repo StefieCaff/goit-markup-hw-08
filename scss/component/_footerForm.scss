@@ -1,24 +1,39 @@
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-
-.subscription-header {
-    // display: flex;
-    // margin-left: 93px;
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
 }
 
-// .subscription-form {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-// }
+.subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription__header{
+ font-weight: 700;
+ font-size: $fontSize;
+ line-height: 16px;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ color: $lightColor;
+ margin-top: 60px;
+
+ @media screen and (min-width: 1200px) {
+  margin-top:15px;
+ }
+}
 
 .subscription__input {
-    // display: flex;
     box-sizing: border-box;
     padding-left: 16px;
     height: 50px;
-    width: 358px;
+    width: 450px;
     margin-top: 20px;
-    margin-left: 93px;
     font-size: $secondaryFontSize;
     background-color: $darkBackgroundColor;
     color: $lightColor;
@@ -28,11 +43,16 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $lightColor;
+  }
 
-    &:hover,
-    &:focus {
-      border-color: $lightColor;
-    }
+  @media screen and (min-width:1200px) {
+    display: flex;
+    margin-left: 93px;
+    width: 358px;
+}
 }
 
 #footer-placeholder::placeholder {
