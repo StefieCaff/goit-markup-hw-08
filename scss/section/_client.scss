@@ -1,12 +1,33 @@
 .client {
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+}
+
+.clients__item:nth-child(odd) {
+  margin-right: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;    
+  }
+}
+
+.clients__item:nth-child(-n + 4) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $primaryRestingIconFill;
     border-radius: 4px;
@@ -19,11 +40,18 @@
     &:hover {
       border: 1px solid $brightAccentColor;
       color: $brightAccentColor;
-        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
-.clients__item:not(:last-child) {
+@media screen and (min-width: 1200px) {
+
+  .clients__item:not(:last-child) {
     margin-right: 30px;
+}
 }
 
 .clients__icon {

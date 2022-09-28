@@ -24,8 +24,8 @@
         <nav class="nav">
           <a class="link logo" href="index.html">WebStudio
           </a>
-              <div class="mobil">
-                <svg class="mobil__hamburger" width="24" height="16">
+              <div class="mobile js-hamburger-open">
+                <svg class="mobile__hamburger" width="24" height="16">
                   <use href="./images/icons.svg#hamburger"></use>
                 </svg>
               </div>
@@ -71,45 +71,12 @@
           </div>
         </section>
 
-          <div class=" mobil__wrapper js-menu-container" id="mobile-menu">
-            <button class="mobil__button-close menu-toggle js-close-menu">
-              <svg width="18" height="18">
-                <use href="./images/icons.svg#mobil-close"></use>
-              </svg>
-            </button>
-            <ul class="list mobil__navbar">
-              <li class="mobil__item">
-                <a class="link mobil__link" href="./index.html">Studio</a>
-              </li>
-              <li class="mobil__item">
-                <a class="link mobil__link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="mobil__item">
-                <a class="link mobil__link" href="#">Contacts</a>
-              </li>
-            </ul>
-            <ul class="list mobil__contacts">
-              <li class="mobil__item">
-                <a class="link mobil-phone__link" href="tel:+38 096 111 11 11"> +38 096 111 11 11</a>
-              </li>
-              <li class="mobil__item">
-                <a class="link mobil-email__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-            </ul>
-          <div class="mobil__socials-wrapper">
-            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">Instagram</a></span>
-            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">Twitter</a></span>
-            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">Facebook</a></span>           
-            <span class="mobil__social-border"><a class="link mobil__social-link" href="#">LinkedIn</a></span>
-          </div>
-        </div>
-<!--
         <section class="section">
             <div class="container">
                 <ul class="list advantage">
                     <li class="advantage__item">
                       <div class="advantage__wrapper">
-                        <svg width="70" height="70">
+                        <svg class= "advantage__icon" width="70" height="70">
                             <use href="./images/icons.svg#icon-antenna"></use>
                           </svg>
                         </div>
@@ -119,7 +86,7 @@
                     </li>
                     <li class="advantage__item">
                       <div class="advantage__wrapper">
-                        <svg width="70" height="70">
+                        <svg class= "advantage__icon" width="70" height="70">
                           <use href="./images/icons.svg#icon-clock"></use>
                         </svg>
                       </div>
@@ -130,7 +97,7 @@
                     </li>
                     <li class="advantage__item">
                       <div class="advantage__wrapper">
-                        <svg width="70" height="70">
+                        <svg class= "advantage__icon" width="70" height="70">
                           <use href="./images/icons.svg#icon-diagram"></use>
                         </svg>
                       </div>
@@ -140,7 +107,7 @@
                     </li>
                     <li class="advantage__item">
                       <div class="advantage__wrapper">
-                        <svg width="70" height="70">
+                        <svg class= "advantage__icon" width="70" height="70">
                           <use href="./images/icons.svg#icon-astronaut"></use>
                         </svg>
                       </div>
@@ -171,7 +138,7 @@
                       srcset="./images/desktop/d-do-laptop370.jpg 1x, 
                         ./images/desktop/d-do-laptop740.jpg 2x"
                       sizes="370px" />
-                      <p class="do__label">Mobil Apps</p>
+                      <p class="do__label">mobile Apps</p>
                   </li>
                   <li class="do__item">
                     <img class="img" 
@@ -192,11 +159,11 @@
                   <li class="team__item"> 
                       <img class="img team__img" 
                         alt=" head shot of Christopher smiling looking stylish" 
-                        src="./images/mobil/m-product450.jpg"
+                        src="./images/mobile/m-product450.jpg"
                         srcset=" ./images/desktop/d-product270.jpg 270w, 
                         ./images/desktop/d-product540.jpg 540w, 
-                        ./images/mobil/m-product450.jpg 450w,
-                        ./images/mobil/m-product900.jpg 900w,
+                        ./images/mobile/m-product450.jpg 450w,
+                        ./images/mobile/m-product900.jpg 900w,
                         ./images/tablet/t-product354.jpg 354w,
                         ./images/tablet/t-product708.jpg 708w"
                         sizes="(min-width: 1200px 270px),
@@ -241,11 +208,11 @@
                   <li class="team__item">
                       <img class="img team__img" 
                         alt=" head shot of Kylie smiling looking stylish" 
-                        src="./images/mobil/m-frontend450.jpg"
+                        src="./images/mobile/m-frontend450.jpg"
                         srcset="./images/desktop/d-frontend270.jpg 270w, 
                           ./images/desktop/d-frontend540.jpg 540w, 
-                          ./images/mobil/m-frontend450.jpg 450w, 
-                          ./images/mobil/m-frontend900.jpg 900w, 
+                          ./images/mobile/m-frontend450.jpg 450w, 
+                          ./images/mobile/m-frontend900.jpg 900w, 
                           ./images/tablet/t-frontend354.jpg 354w,
                           ./images/tablet/t-frontend708.jpg 708w"
                        sizes="(min-width: 1200px 270px),
@@ -290,13 +257,13 @@
                   <li class="team__item">
                       <img class="img team__img"
                         alt="head shot of Rayan smiling looking stylish"
-                        src="./images/mobil/m-marketing450.jpg" 
+                        src="./images/mobile/m-marketing450.jpg" 
                         srcset="./images/desktop/d-marketing270 270w,
                            ./images/desktop/d-marketing540.jpg 540w,
                            ./images/tablet/t-marketing354.jpg 354w, 
                            ./images/tablet/t-marketing708.jpg 708w,
-                           ./images/mobil/m-marketing450.jpg 450w, 
-                           ./images/mobil/m-marketing900.jpg 900w"
+                           ./images/mobile/m-marketing450.jpg 450w, 
+                           ./images/mobile/m-marketing900.jpg 900w"
                          sizes="(max-width: 480px 450px), 
                            (min-width: 768px 354px), 
                            (min-width: 1200px 270px),
@@ -341,13 +308,13 @@
                   <li class="team__item">
                       <img class="img team__img" 
                         alt=" head shot of Tyler smiling looking stylish"
-                        src="./images/mobil/m-designer450.jpg" 
+                        src="./images/mobile/m-designer450.jpg" 
                         srcset="./images/desktop/d-designer270.jpg 270w, 
                           ./images/desktop/d-designer540.jpg 540w, 
                           ./images/tablet/t-designer354.jpg 354w,
                           ./images/tablet/t-designer708.jpg 708w,
-                          ./images/mobil/m-designer450.jpg 450w,
-                          ./images/mobil/m-designer900.jpg 900w"
+                          ./images/mobile/m-designer450.jpg 450w,
+                          ./images/mobile/m-designer900.jpg 900w"
                         sizes="(max-width: 480px 450px), 
                            (min-width: 768px 354px), 
                            (min-width: 1200px 270px),
@@ -443,10 +410,10 @@
           </div>
         </section>
   </main>
-    
+
   <footer class="footer">
     <div class="container footer-container">
-      <div>
+      <div class="footer-logo-wrapper">
         <a class="link logo logo--footer" href="index.html">WebStudio</a>
         <address class="address">
           <ul class="list">
@@ -511,6 +478,40 @@
     </div>
   </footer>
 
+<div class="mobile__wrapper js-mobile-menu" id="mobile-menu">
+  <button class="mobile__button-close js-cross-close">
+    <svg width="18" height="18">
+      <use href="./images/icons.svg#mobile-close"></use>
+    </svg>
+  </button>
+  <ul class="list mobile__navbar">
+    <li class="mobile__item">
+      <a class="link mobile__link" href="./index.html">Studio</a>
+    </li>
+    <li class="mobile__item">
+      <a class="link mobile__link" href="./portfolio.html">Portfolio</a>
+    </li>
+    <li class="mobile__item">
+      <a class="link mobile__link" href="#">Contacts</a>
+    </li>
+  </ul>
+  <ul class="list mobile__contacts">
+    <li class="mobile__item">
+      <a class="link mobile-phone__link" href="tel:+38 096 111 11 11"> +38 096 111 11 11</a>
+    </li>
+    <li class="mobile__item">
+      <a class="link mobile-email__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+  </ul>
+  <div class="mobile__socials-wrapper">
+    <span class="mobile__social-border"><a class="link mobile__social-link" href="#">Instagram</a></span>
+    <span class="mobile__social-border"><a class="link mobile__social-link" href="#">Twitter</a></span>
+    <span class="mobile__social-border"><a class="link mobile__social-link" href="#">Facebook</a></span>
+    <span class="mobile__social-border"><a class="link mobile__social-link" href="#">LinkedIn</a></span>
+  </div>
+</div>
+
+<!--
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__button-close" data-modal-close="">
@@ -571,8 +572,10 @@
   </div>
   </div>
 -->
-  <script src="./js/modal.js"></script>
-  <script src="./js/mobil-menu.js"></script>
+
+<!--SCRIPTS-->
+  <script defer src="./js/modal.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

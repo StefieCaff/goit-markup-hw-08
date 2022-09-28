@@ -1,3 +1,7 @@
+.section-no-top-padding{
+  display: none;
+}
+
 @media screen and (min-width:1200px) {
   
 .section-no-top-padding {
@@ -15,7 +19,6 @@
 .do__item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .do__label {
     font-weight: 700;
