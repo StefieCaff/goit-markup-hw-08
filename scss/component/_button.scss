@@ -54,12 +54,12 @@
 .filter__button {
   font-family: Roboto, sans-serif;
   background-color: $lightBackgroundColor;
-  padding: 6px 26px;
+  padding: 6px 30px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
-  font-size: var(--sub-font-size);
+  font-size: $secondaryFontSize;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;

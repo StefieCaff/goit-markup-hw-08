@@ -288,12 +288,12 @@ address {
 .filter__button {
   font-family: Roboto, sans-serif;
   background-color: #F5F4FA;
-  padding: 6px 26px;
+  padding: 6px 30px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 500;
-  font-size: var(--sub-font-size);
+  font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -623,8 +623,18 @@ address {
 }
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
+.filter__item {
+  margin-bottom: 15px;
 }
 
 .filter__item:not(:last-child) {
@@ -1031,6 +1041,7 @@ address {
   margin-left: 30px;
   margin-top: 30px;
   background: #FFFFFF;
+  width: 450px;
 }
 
 .project__wrapper {
@@ -1068,12 +1079,17 @@ address {
 
 .project-description__wrapper {
   position: relative;
-  width: 370px;
+  width: 450px;
   height: 294px;
   overflow: hidden;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .project-description__wrapper {
+    width: 370px;
+  }
 }
 
 .project__overlay {
