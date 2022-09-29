@@ -24,7 +24,11 @@
 .hero-button {
   @extend %button;
     padding: 10px 20px;
-    margin-left: 140px
+    margin-left: 140px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 284px;
+  }
 }
 
 .form__button {
