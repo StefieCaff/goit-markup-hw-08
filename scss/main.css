@@ -717,11 +717,6 @@ address {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .social {
-    padding-bottom: 0px;
-  }
-}
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -1087,14 +1082,19 @@ address {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team {
     display: flex;
+    flex-wrap: wrap;
   }
-  .team__item {
-    display: flex;
-    flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-wrap: nowrap;
   }
+}
+
+@media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
     margin-right: 30px;
   }
