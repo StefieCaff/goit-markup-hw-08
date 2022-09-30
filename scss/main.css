@@ -1197,7 +1197,12 @@ address {
   margin-left: 30px;
   margin-top: 30px;
   background: #FFFFFF;
-  width: 450px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    max-width: calc(50vw - 30px);
+  }
 }
 
 .project__wrapper {
@@ -1221,6 +1226,10 @@ address {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.item-padding-bottom {
+  padding-bottom: 36px;
 }
 
 .project__link {
