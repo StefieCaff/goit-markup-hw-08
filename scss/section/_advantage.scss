@@ -7,6 +7,7 @@
 
   @media screen and (min-width: 1200px) {
   flex-wrap: nowrap;
+  justify-content: center;
  }
 }
 
@@ -41,6 +42,15 @@
   @media screen and (min-width:768px) {
     width: 354px;
   }
+
+  @media screen and (min-width: 1200px) {
+      width: 270px;
+  }
+
+  @media screen and (min-width: 1600px) {
+  display: flex;
+  justify-content: center;
+  }
 }
 
 .advantage__icon {
@@ -55,6 +65,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .advantage__text {
@@ -72,17 +86,17 @@
   margin-right: 30px;
 }
 
-.advantage__wrapper {
+// .advantage__wrapper {
   // display: flex;
   // justify-content: center;
-  align-items: center;
-  width: 270px;
+  // align-items: center;
+  // width: 270px;
   // height: 120px;
   // background: $lightBackgroundColor;
   // border-radius: 4px;
   // margin-bottom: 30px;
   //text-align:none;
-}
+// }
 
 .advantage__icon {
   margin-top: 0x;

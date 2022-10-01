@@ -1,15 +1,10 @@
-.section-no-top-padding{
-  display: none;
-}
-
-@media screen and (min-width:1200px) {
-  
-.section-no-top-padding {
+  .section-no-top-padding {
     padding-top: 0;
 }
 
 .do {
     display: flex;
+    justify-content: center;
 }
 
 .do__item {
@@ -35,5 +30,4 @@
     left: 0;
     right: 0;
     white-space: nowrap;
-}
 }
