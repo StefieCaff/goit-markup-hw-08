@@ -1035,7 +1035,7 @@ address {
 }
 
 .advantage__item {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .advantage__item {
@@ -1048,8 +1048,10 @@ address {
   }
 }
 
-.advantage__item:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .advantage__item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantage__item:nth-child(odd) {
@@ -1058,12 +1060,17 @@ address {
 }
 
 .advantage__wrapper {
-  width: 450px;
+  width: 320px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .advantage__wrapper {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .advantage__wrapper {
@@ -1186,7 +1193,11 @@ address {
 
 .team__img {
   margin-bottom: 30px;
-  max-width: 450px;
+}
+@media screen and (min-width: 480px) {
+  .team__img {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team__img {
