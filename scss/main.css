@@ -89,15 +89,6 @@ address {
   }
 }
 
-.section-desktop {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .section-desktop {
-    display: unset;
-  }
-}
-
 .section-heading {
   display: flex;
   justify-content: center;
@@ -1127,9 +1118,19 @@ address {
   padding-top: 0px;
 }
 
+.section--desktop {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--desktop {
+    display: unset;
+  }
+}
+
 .do {
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 
 .do__item {
