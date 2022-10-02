@@ -303,8 +303,6 @@ address {
   padding: 10px 0px;
   width: 200px;
   margin-left: 12px;
-  margin-top: 20px;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .subscription-button {
@@ -796,27 +794,22 @@ address {
 
 .footer {
   background-color: #2F303A;
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 
-.footer-logo-wrapper {
+.footer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 15px;
+  justify-content: space-around;
 }
 
-.address__item {
-  text-align: center;
-}
-@media screen and (min-width: 1200px) {
-  .address__item {
-    text-align: left;
-  }
+.subscription__header, .social__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 15px;
 }
 
 .footer-address-link {
@@ -833,83 +826,26 @@ address {
   color: #FFFFFF;
 }
 
-.footer-header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-top: 48px;
-  text-align: center;
-}
-@media screen and (min-width: 1200px) {
-  .footer-header {
-    margin-top: 15px;
-    text-align: left;
-  }
+.footer-wrapper {
+  margin-left: 70px;
 }
 
-.footer-container {
+.subscription-header {
   display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .footer-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-container {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-  }
-  .footer-container .footer-socials-wrapper {
-    margin-left: 70px;
-  }
 }
 
 .subscription-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .subscription-form {
-    flex-direction: row;
-  }
-}
-
-.subscription {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.subscription__header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-top: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .subscription__header {
-    margin: 15px 240px 0 0;
-  }
 }
 
 .subscription__input {
+  display: flex;
   box-sizing: border-box;
   padding-left: 16px;
   height: 50px;
-  max-width: 450px;
-  margin-top: 20px;
+  width: 358px;
   font-size: 16px;
   background-color: #2F303A;
   color: #FFFFFF;
@@ -922,13 +858,6 @@ address {
 }
 .subscription__input:hover, .subscription__input:focus {
   border-color: #FFFFFF;
-}
-@media screen and (min-width: 1200px) {
-  .subscription__input {
-    display: flex;
-    margin-left: 93px;
-    width: 358px;
-  }
 }
 
 #footer-placeholder::-moz-placeholder {
@@ -958,6 +887,11 @@ address {
 .subscription__icon {
   padding-left: 10px;
   fill: currentColor;
+}
+
+.subscription__header {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .hero-heading {
@@ -1280,17 +1214,6 @@ address {
   margin-left: 30px;
   margin-top: 30px;
   background: #FFFFFF;
-  max-width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .project__item {
-    max-width: calc(50vw - 30px);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project__item {
-    max-width: 370px;
-  }
 }
 
 .project__wrapper {
@@ -1316,17 +1239,6 @@ address {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
-  .item-padding-bottom {
-    padding-bottom: 36px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .item-padding-bottom {
-    padding-bottom: 0px;
-  }
-}
-
 .project__link {
   display: block;
   transition-property: box-shadow, transform;
@@ -1339,15 +1251,12 @@ address {
 
 .project-description__wrapper {
   position: relative;
+  width: 370px;
+  height: 294px;
   overflow: hidden;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .project-description__wrapper {
-    max-width: calc(33.3333333333vw - 30px);
-  }
 }
 
 .project__overlay {
@@ -1365,15 +1274,6 @@ address {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project__text {
-  padding: 15px 0px 15px;
-}
-@media screen and (min-width: 1200px) {
-  .project__text {
-    padding: 0px;
-  }
 }
 
 .project-description__wrapper:hover .project__overlay {
