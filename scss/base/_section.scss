@@ -7,3 +7,11 @@
     padding-bottom:94px;
   }
 }
+
+.section-desktop {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: unset;
+  }
+}
