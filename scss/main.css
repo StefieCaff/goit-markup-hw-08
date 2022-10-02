@@ -1196,17 +1196,17 @@ address {
 }
 @media screen and (min-width: 480px) {
   .team__img {
-    max-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__img {
-    max-width: 354px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__img {
-    max-width: 270px;
+    width: 270px;
   }
 }
 
