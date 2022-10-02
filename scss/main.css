@@ -430,17 +430,17 @@ address {
   }
 }
 
-.header-contact__item {
-  padding: 5px 0 5px 0;
-}
-
 .header-contact__item:first-child {
-  margin-right: 30px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .header-contact__item:first-child {
+    margin-right: 30px;
+  }
 }
 
 .header-contact__link {
   color: #757575;
-  padding: 10px 0;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
