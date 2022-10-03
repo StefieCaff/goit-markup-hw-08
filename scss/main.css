@@ -156,10 +156,12 @@ address {
 
 .mobile__wrapper {
   position: fixed;
-  padding-left: 30px;
-  padding-top: 48px;
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
   width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
@@ -174,7 +176,6 @@ address {
   position: absolute;
   top: 21px;
   right: 25px;
-  padding: 0px;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -191,7 +192,7 @@ address {
 }
 
 .mobile__item {
-  padding-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .mobile__link {
@@ -206,10 +207,6 @@ address {
 }
 .mobile__link:hover, .mobile__link:focus {
   color: #2196F3;
-}
-
-.mobile__contacts {
-  padding-top: 300px;
 }
 
 .mobile-phone__link {
@@ -227,8 +224,9 @@ address {
 }
 
 .mobile__socials-wrapper {
-  padding-bottom: 48px;
-  padding-top: 32px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 48px -10px;
 }
 
 .mobile-email__link {
@@ -373,6 +371,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .navbar__link {
@@ -403,7 +402,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .current-link::after {
-    bottom: -5px;
+    bottom: -4px;
   }
 }
 
@@ -477,7 +476,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-height: 350px) {
+@media screen and (max-height: 400px) {
   .backdrop {
     align-items: flex-start;
   }

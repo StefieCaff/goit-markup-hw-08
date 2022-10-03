@@ -12,10 +12,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-height: 350px) {
+  @media screen and (max-height: 400px) {
     align-items: flex-start;
   }
-
 }
 
 .modal {

@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .navbar__link {
@@ -65,7 +66,7 @@
     border-radius: 2px;
 
     @media screen and (min-width: 1200px) {
-      bottom: -5px;
+      bottom: -4px;
     }
 }
 
