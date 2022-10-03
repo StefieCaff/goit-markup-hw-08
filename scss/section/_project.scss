@@ -85,10 +85,6 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 1200px) {
-    max-width: calc((100vw / 3) - 30px)
-  }
 }
 
 .project__overlay {
@@ -117,7 +113,7 @@
 
 }
 
-.project-description__wrapper:hover .project__overlay {
+.project__link:hover .project__overlay {
     transform: translateY(0px);
 }
 
