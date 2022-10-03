@@ -1075,12 +1075,6 @@ address {
     width: 270px;
   }
 }
-@media screen and (min-width: 1600px) {
-  .advantage__wrapper {
-    display: flex;
-    justify-content: center;
-  }
-}
 
 .advantage__icon {
   margin-top: 25px;
