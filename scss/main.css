@@ -1006,20 +1006,10 @@ address {
 .hero {
   padding: 118px 0;
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/d-hero1600.jpg), url(../images/mobile/m-hero480.jpg), url(../images/tablet/t-hero768.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/m-hero480.jpg);
   background-size: cover;
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding: 200px 0;
-  }
-}
 
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/d-hero3200.jpg);
-  }
-}
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/m-hero960.jpg);
@@ -1028,6 +1018,11 @@ address {
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/t-hero1536.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/d-hero3200.jpg);
   }
 }
 @media screen and (min-width: 768px) {
