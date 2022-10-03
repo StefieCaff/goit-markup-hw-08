@@ -35,16 +35,15 @@
 }
 
 .advantage__wrapper {
-  width: 320px;
   height: 120px;
   background: $lightBackgroundColor;
   border-radius: 4px;
   margin-bottom: 30px;
   text-align: center;
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
 
   @media screen and (min-width:768px) {
     width: 354px;

@@ -1059,17 +1059,11 @@ address {
 }
 
 .advantage__wrapper {
-  width: 320px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .advantage__wrapper {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 768px) {
   .advantage__wrapper {
